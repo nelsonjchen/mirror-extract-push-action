@@ -5,6 +5,7 @@ set -e
 # Download Archive
 curl -L -o archive.zip "$1"
 # Extract
+rm -rf archive
 unzip archive.zip -d archive
 rm archive.zip
 # Commit
